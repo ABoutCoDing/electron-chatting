@@ -1,8 +1,8 @@
 {
-  "name": "electron-react-boilerplate",
-  "productName": "ElectronReact",
-  "version": "0.10.0",
-  "description": "Electron application boilerplate based on React, React Router, Webpack, React Hot Loader for rapid application development",
+  "name": "electron-chatting",
+  "productName": "ElectronChatting",
+  "version": "0.0.1",
+  "description": "Sample chatting app with Electron and React",
   "main": "main.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 node --trace-warnings ./test/runTests.js",
@@ -29,9 +29,9 @@
   },
   "browserslist": "electron 1.4",
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.develar.ElectronReact",
-    "category": "public.app-category.tools",
+    "productName": "ElectronChatting",
+    "appId": "org.ABCD.ElectronChatting",
+    "category": "public.sample.chatting",
     "dmg": {
       "contents": [
         {
@@ -74,27 +74,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chentsulin/electron-react-boilerplate.git"
+    "url": "https://github.com/ABoutCoDing/electron-chatting.git"
   },
   "author": {
-    "name": "C. T. Lin",
-    "email": "chentsulin@gmail.com",
-    "url": "https://github.com/chentsulin"
+    "name": "Kesus Kim",
+    "email": "kesuskim@gmail.com",
+    "url": "https://github.com/kesuskim"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chentsulin/electron-react-boilerplate/issues"
+    "url": "https://github.com/ABoutCoDing/electron-chatting/issues"
   },
   "keywords": [
     "electron",
-    "boilerplate",
     "react",
-    "react-router",
-    "flux",
-    "webpack",
-    "react-hot"
+    "chatting",
+    "ABCD"
   ],
-  "homepage": "https://github.com/chentsulin/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/ABoutCoDing/electron-chatting#readme",
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mocks/fileMock.js",
