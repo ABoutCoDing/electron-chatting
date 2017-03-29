@@ -19,7 +19,9 @@ export default class HomePage extends Component {
       <Window
         chrome
         height="100vh"
-        padding="10px"
+        padding="0"
+        verticalAlignment="center"
+        horizontalAlignment="center"
       >
         <TitleBar
           title="일렉트론으로 개발 시작하기"

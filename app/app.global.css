@@ -1,43 +1,74 @@
 @import "~font-awesome/css/font-awesome.css";
 
 body {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+
+  overflow: hidden;
+}
+
+
+.chat-container {
+  width: 380px;
+  min-height: 500px;
+  max-height: 550px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0 10px;
+}
+.chat-container::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+.chat-container::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+.chat-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.5);
+	background-color: #888;
+}
+.chat {
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #d6d6d6;
+  max-width: 75%;
+  clear: both;
   position: relative;
-  color: white;
-  height: 100vh;
-  background-color: #232C39;
-  background-image: linear-gradient(45deg, rgba(0, 216, 255, .5) 10%, rgba(0, 1, 127, .7));
-  font-family: Arial, Helvetica, Helvetica Neue, serif;
-  overflow-y: hidden;
-
-  margin: 0;
-  background: rgb(255,255,255);
-  border-radius: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
-
-h2 {
-  margin: 0;
-  font-size: 2.25rem;
-  font-weight: bold;
-  letter-spacing: -.025em;
-  color: #fff;
+.chat.other {
+  align-self: flex-start;
 }
-
-p {
-  font-size: 24px;
+.chat.other::before {
+  content: "";
+  position: absolute;
+  left: -0.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-right: 0.5em solid #d6d6d6;
+  border-bottom-right-radius: 1em 0.5em;
 }
-
-li {
-  list-style: none;
+.chat.me {
+  align-self: flex-end;
+  background-color: #1289fe;
+  color: white !important;
 }
-
-a {
-  color: white;
-  opacity: .75;
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 1;
-  text-decoration: none;
-  cursor: pointer;
+.chat.me::after {
+  content: "";
+  position: absolute;
+  right: -0.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-left: 0.5em solid #1289fe;
+  border-bottom-left-radius: 1em 0.5em;
 }
