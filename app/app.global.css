@@ -10,8 +10,7 @@ body {
 
 .chat-container {
   width: 380px;
-  min-height: 500px;
-  max-height: 550px;
+  height: 550px;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 0 10px;

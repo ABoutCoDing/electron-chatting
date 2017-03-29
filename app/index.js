@@ -10,6 +10,8 @@ import './app.global.css';
 const store = configureStore();
 const history = syncHistoryWithStore(hashHistory, store);
 
+export const Dispatch = store.dispatch;
+
 render(
   <AppContainer>
     <Root store={store} history={history} />

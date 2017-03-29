@@ -24,10 +24,6 @@ class App extends Component {
       </div>
     );
   }
-
-  componentDidMount() {
-    SendMessage('Hello, World!!');
-  }
 }
 
 function mapStateToProps(state) {
